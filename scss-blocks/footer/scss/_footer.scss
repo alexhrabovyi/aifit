@@ -1,0 +1,24 @@
+.footer-wrapper {
+    width: 100%;
+    @include flex-builder(column, none, center);
+    margin-top: 150px;
+
+    &__logo-link {
+        margin-bottom: 26px;
+    }
+
+    &__button {
+        margin-bottom: 33px;
+    }
+
+    &__text-block {
+        width: 100%;
+        @include flex-builder(row, space-between, center);
+        margin-bottom: 22px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #2C4058;
+    }
+}

@@ -927,3 +927,49 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.footer-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+.footer-wrapper__logo-link {
+  margin-bottom: 26px;
+}
+.footer-wrapper__button {
+  margin-bottom: 33px;
+}
+.footer-wrapper__text-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 22px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #2C4058;
+}
