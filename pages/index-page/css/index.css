@@ -9,3 +9,59 @@
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
+
+.container {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.button {
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0B98FF;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 24px;
+  color: #FFFFFF;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+.button:hover {
+  background: #FFFFFF;
+  color: #0B98FF;
+  border: solid 1px #0B98FF;
+}
+.button:active {
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-and-login-wrapper {
+  width: 100%;
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}

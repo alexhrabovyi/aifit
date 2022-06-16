@@ -1,0 +1,6 @@
+.logo-and-login-wrapper {
+    width: 100%;
+    padding-top: 18px;
+    @include flex-builder(row, space-between, center);
+    margin-bottom: 18px;
+}
