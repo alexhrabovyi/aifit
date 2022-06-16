@@ -1,0 +1,62 @@
+// media mixins
+
+@mixin media-l {
+    @media (max-width: 1360px) {
+        @content;
+    }
+}
+
+@mixin media-m {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-s {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+// flex mixins
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center {
+    @include flex-center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-column-center-center {
+    @include flex-center-center;
+    flex-direction: column;
+}
+
+@mixin flex-builder($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// background mixin
+
+@mixin background-cover($property) {
+    background: ($property) center center no-repeat;
+    background-size: cover;
+}
