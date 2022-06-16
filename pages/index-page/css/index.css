@@ -724,6 +724,14 @@ button.swiper-pagination-bullet {
   color: #FFFFFF;
 }
 
+.text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  color: #2C4058;
+}
+
 .logo-and-login-wrapper {
   width: 100%;
   padding-top: 10px;
@@ -820,4 +828,74 @@ button.swiper-pagination-bullet {
 }
 .header-slider-wrapper__pagination-bullet_active {
   background: #FFFFFF;
+}
+
+.opportunities-wrapper {
+  margin-top: 150px;
+}
+.opportunities-wrapper__content-block {
+  margin-bottom: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.opportunities-wrapper__img-block {
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+.opportunities-wrapper__img-block_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.opportunities-wrapper__img-block_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.opportunities-wrapper__rectangle {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.opportunities-wrapper__rectangle_blue {
+  background: rgba(11, 152, 255, 0.22);
+  left: 0;
+}
+.opportunities-wrapper__rectangle_purple {
+  background: rgba(102, 51, 209, 0.22);
+  right: 0;
 }

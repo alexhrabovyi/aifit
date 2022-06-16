@@ -1,0 +1,40 @@
+.opportunities-wrapper {
+    margin-top: 150px;
+
+    &__content-block {
+        margin-bottom: 124px;
+        @include flex-builder(row, space-between, center);
+    }
+
+    &__img-block {
+        width: 600px;
+        height: 600px;
+        position: relative;
+
+        &_top {
+            @include flex-builder(row, flex-end, flex-end);
+        }
+
+        &_bottom {
+            @include flex-builder(row, flex-start, flex-end);
+        }
+    }
+
+    &__rectangle {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        &_blue {
+            background: rgba(11, 152, 255, 0.22);
+            left: 0;
+        }
+
+        &_purple {
+            background: rgba(102, 51, 209, 0.22);
+            right: 0;
+        }
+    }
+}
