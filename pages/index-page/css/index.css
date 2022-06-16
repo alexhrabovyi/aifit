@@ -705,6 +705,7 @@ button.swiper-pagination-bullet {
   color: #FFFFFF;
   -webkit-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
+  cursor: pointer;
 }
 .button:hover {
   background: #FFFFFF;
@@ -718,6 +719,9 @@ button.swiper-pagination-bullet {
 .button_big {
   width: 365px;
   height: 80px;
+}
+.button_longer {
+  width: 200px;
 }
 
 .title-white {
@@ -737,6 +741,65 @@ button.swiper-pagination-bullet {
   font-size: 40px;
   letter-spacing: 0.1em;
   color: #2C4058;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  -webkit-transition: 0.07s all ease-in-out;
+  transition: 0.07s all ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.animation-translateY {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  background: rgba(11, 152, 255, 0.1);
+  border: 1px solid #0B98FF;
+  border-radius: 15px;
+  padding: 0 9px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #2C4058;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+.input:hover {
+  background: rgba(11, 152, 255, 0.23);
+}
+.input:focus {
+  background: rgba(11, 152, 255, 0.23);
+  outline: none;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .logo-and-login-wrapper {
@@ -828,6 +891,7 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   -webkit-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
+  cursor: pointer;
 }
 .header-slider-wrapper__pagination-bullet:hover {
   -webkit-transform: scale(1.2);
@@ -972,4 +1036,132 @@ button.swiper-pagination-bullet {
   font-size: 20px;
   letter-spacing: 0.1em;
   color: #2C4058;
+}
+
+.form {
+  width: 810px;
+  background: #FFFFFF;
+  border-radius: 85px;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 31px 112px 74px 112px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.form__title {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 30px;
+  color: #2C4058;
+  margin-bottom: 39px;
+}
+.form__input {
+  margin-bottom: 20px;
+}
+.form__checkbox-block {
+  width: 300px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__checkbox-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__circle-external {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #0B98FF;
+  border-radius: 50%;
+  margin-right: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__circle-inner {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.form__checkbox-selected .form__circle-inner {
+  background: #0B98FF;
+}
+.form__background {
+  width: 112px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.form__background_left {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 152, 255, 0.22)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(11, 152, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.form__background_right {
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(11, 152, 255, 0.22)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(11, 152, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.form__button_longer {
+  font-size: 14px;
+}
+.form__close-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  z-index: 1;
+}
+.form__close-button svg {
+  fill: #0B98FF;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+.form__close-button svg:hover {
+  fill: #0b79c7;
+}
+.form__close-button svg:active {
+  fill: #0b63a1;
 }

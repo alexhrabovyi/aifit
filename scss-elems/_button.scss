@@ -10,6 +10,7 @@
     font-size: 24px;
     color: #FFFFFF;
     transition: all ease-in-out .1s;
+    cursor: pointer;
 
     &:hover {
         background: #FFFFFF;
@@ -24,5 +25,9 @@
     &_big {
         width: 365px;
         height: 80px;
+    }
+
+    &_longer {
+        width: 200px;
     }
 }

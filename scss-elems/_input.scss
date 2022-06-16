@@ -1,0 +1,26 @@
+.input {
+    width: 300px;
+    height: 40px;
+    background: rgba(11, 152, 255, 0.1);
+    border: 1px solid #0B98FF;
+    border-radius: 15px;
+    padding: 0 9px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #2C4058;
+    transition: all ease-in-out .1s;
+
+    &:hover {
+        background: rgba(11, 152, 255, 0.23);
+    }
+
+    &:focus {
+        background: rgba(11, 152, 255, 0.23);
+        outline: none;
+    }
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}

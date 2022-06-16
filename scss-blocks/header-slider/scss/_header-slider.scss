@@ -45,6 +45,7 @@
         border: 1px solid #FFFFFF;
         border-radius: 50%;
         transition: all ease-in-out .1s;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.2);

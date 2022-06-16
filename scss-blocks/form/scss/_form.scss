@@ -1,0 +1,100 @@
+.form {
+    width: 810px;
+    background: #FFFFFF;
+    border-radius: 85px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 31px 112px 74px 112px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 30px;
+        color: #2C4058;
+        margin-bottom: 39px;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+    }
+
+    &__checkbox-block {
+        width: 300px;
+        margin-bottom: 20px;
+        @include flex-builder(row, space-between, center);
+    }
+
+    &__checkbox-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        @include flex-builder(row, center, center);
+    }
+
+    &__circle-external {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #0B98FF;
+        border-radius: 50%;
+        margin-right: 9px;
+        @include flex-builder(row, center, center);
+    }
+
+    &__circle-inner {
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+    }
+
+    &__checkbox-selected .form__circle-inner {
+        background: #0B98FF;
+    }
+
+    &__background {
+        width: 112px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        &_left {
+            left: 0;
+            background: linear-gradient(90deg, rgba(11, 152, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        &_right {
+            right: 0;
+            background: linear-gradient(90deg, rgba(11, 152, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__button_longer {
+        font-size: 14px;
+    }
+
+    &__close-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        z-index: 1;
+    }
+
+    &__close-button svg {
+        fill: #0B98FF;
+        transition: all ease-in-out .1s;
+
+        &:hover {
+            fill: #0b79c7;
+        }
+
+        &:active {
+            fill: #0b63a1;
+        }
+    }
+}
