@@ -12,6 +12,7 @@
 
 // libs 
 
+@import "../../../js-libs/swiper/swiper-bundle.min";
 @import "../../../scss-libs/mixins";
 @import "../../../scss-libs/fonts";
 
@@ -19,7 +20,9 @@
 
 @import "../../../scss-elems/container";
 @import "../../../scss-elems/button";
+@import "../../../scss-elems/title-white";
 
 // blocks
 
-@import "../../../scss-blocks/logo-and-login/scss/logo-and-login"
+@import "../../../scss-blocks/logo-and-login/scss/logo-and-login";
+@import "../../../scss-blocks/header-slider/scss/header-slider";

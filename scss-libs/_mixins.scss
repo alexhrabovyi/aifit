@@ -57,6 +57,6 @@
 // background mixin
 
 @mixin background-cover($property) {
-    background: ($property) center center no-repeat;
+    background: ($property) top center no-repeat;
     background-size: cover;
 }
