@@ -797,6 +797,10 @@ button.swiper-pagination-bullet {
   background: rgba(11, 152, 255, 0.23);
   outline: none;
 }
+.input_incorrect {
+  border: 1px solid #FF7066;
+  background: rgba(255, 62, 62, 0.23) !important;
+}
 
 :focus::-webkit-input-placeholder {
   color: transparent;
@@ -1164,4 +1168,10 @@ button.swiper-pagination-bullet {
 }
 .form__close-button svg:active {
   fill: #0b63a1;
+}
+.form__error-block {
+  position: absolute;
+  padding-top: 10px;
+  font-family: "Open Sans";
+  color: #FF7066;
 }

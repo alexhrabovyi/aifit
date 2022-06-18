@@ -19,6 +19,11 @@
         background: rgba(11, 152, 255, 0.23);
         outline: none;
     }
+
+    &_incorrect {
+        border: 1px solid #FF7066;
+        background: rgba(255, 62, 62, 0.23) !important;
+    }
 }
 
 :focus::-webkit-input-placeholder {

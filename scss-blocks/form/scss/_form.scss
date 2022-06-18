@@ -97,4 +97,11 @@
             fill: #0b63a1;
         }
     }
+
+    &__error-block {
+        position: absolute;
+        padding-top: 10px;
+        font-family: "Open Sans";
+        color: #FF7066;
+    }
 }

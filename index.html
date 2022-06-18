@@ -57,10 +57,11 @@
     <section class="register-form-modal hidden modal-window">
         <form class="form register-form-wrapper">
             <p class="form__title">ЗАРЕГИСТРИРОВАТЬСЯ</p>
-            <input type="text" class="input form__input" placeholder="НИК">
-            <input type="text" class="input form__input" placeholder="ПАРОЛЬ">
-            <input type="text" class="input form__input" placeholder="ВОЗРАСТ">
-            <div class="form__checkbox-block">
+            <input type="text" class="input form__input" placeholder="НИК" data-type-nick>
+            <input type="text" class="input form__input" placeholder="ПАРОЛЬ" data-type-password>
+            <input type="text" class="input form__input" placeholder="ПОВТОРИТЕ ПАРОЛЬ" data-type-password-confirm>
+            <input type="text" class="input form__input" placeholder="ВОЗРАСТ" data-type-age>
+            <div class="form__checkbox-block" data-checkbox-sex>
                 <button class="form__checkbox-button" data-checkbox-option>
                     <span class="form__circle-external">
                         <span class="form__circle-inner"></span>
@@ -74,13 +75,14 @@
                     <p class="form__text">ЖЕНЩИНА</p>
                 </button>
             </div>
-            <button class="button button_longer form__button_longer">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="button button_longer form__button_longer" data-button-submit>ЗАРЕГИСТРИРОВАТЬСЯ</button>
             <button class="form__close-button" data-toggle-form="register-form">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.4842 14.9995L29.071 5.41304C30.3097 4.17445 30.3097 2.16753 29.071 0.928942C27.8324 -0.309647 25.8254 -0.309647 24.5868 0.928942L15 10.5164L5.41323 0.93002C4.1746 -0.308569 2.16761 -0.308569 0.928975 0.93002C-0.309658 2.16861 -0.309658 4.17553 0.928975 5.41411L10.5157 15.0005L0.928975 24.587C-0.309658 25.8256 -0.309658 27.8325 0.928975 29.071C2.16761 30.3097 4.1746 30.3097 5.41323 29.071L15 19.4846L24.5868 29.071C25.8254 30.3097 27.8324 30.3097 29.071 29.071C30.3097 27.8324 30.3097 25.8255 29.071 24.587L19.4842 14.9995Z" />
                 </svg>
             </button>
+            <div class="form__error-block" data-form-error></div>
             <div class="form__background form__background_left"></div>
             <div class="form__background form__background_right"></div>
         </form>
