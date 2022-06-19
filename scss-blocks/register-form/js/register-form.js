@@ -217,14 +217,21 @@
 
         body = JSON.stringify(body);
 
+        console.log(body);
+
         buttonSubmit.style.cssText = "background: #FFFFFF; border: 1px solid #0B98FF";
         buttonSubmit.innerHTML = '<svg class="circular-loader"viewBox="25 25 50 50" ><circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#70c542" stroke-width="2" /></svg>'
 
         document.body.style.pointerEvents = "none";
 
         async function postData(url, data) {
+            console.log(data);
+
             let res = await fetch(url, {
                 method: "POST",
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
                 body: data,
             })
 
@@ -234,8 +241,11 @@
         postData("http://localhost:8080/registration", body)
             .then((res) => {
                 console.log(res);
-                buttonSubmit.innerHTML = "Готово";
-                buttonSubmit.style.color = "#0B98FF";
+
+                if (res) {
+                    buttonSubmit.innerHTML = "Готово";
+                    buttonSubmit.style.color = "#0B98FF";
+                }
             })
     })
 }
